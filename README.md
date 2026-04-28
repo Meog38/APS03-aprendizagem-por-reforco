@@ -1,6 +1,6 @@
 # APS 03 - Aprendizagem por Reforço
 
-**Autor:** Maria Eduarda Oliveira Galdino
+**Autores:** Maria Eduarda Oliveira Galdino e Adrielle Gabriel Santana
 
 Este repositório contém a implementação dos algoritmos Q-Learning e SARSA para os ambientes `CliffWalking` e `FrozenLake` da biblioteca Gymnasium, desenvolvidos como parte da APS 03 da disciplina.
 
@@ -132,10 +132,10 @@ A lógica natural diria para o agente tentar ir para a direita ('R') ou baixo ('
 **Dinâmica de Escorregamento Explicada (Exemplo em (0,1)):**
 ```mermaid
 graph TD
-    A["Agente escolhe ir para Cima (⬆️)"] --> B{"Probabilidades do Gelo"}
-    B -->|33% (Intenção)| C["Bate na Parede Acima<br>(Seguro)"]
-    B -->|33% (Deslize Esquerdo)| D["Vai para a Esquerda<br>(Seguro)"]
-    B -->|33% (Deslize Direito)| E["Vai para a Direita<br>(Seguro)"]
+    A["Agente escolhe ir para Cima"] --> B{"Probabilidades do Gelo"}
+    B -->|"33% Intenção"| C["Bate na Parede Acima (Seguro)"]
+    B -->|"33% Deslize Esquerdo"| D["Vai para a Esquerda (Seguro)"]
+    B -->|"33% Deslize Direito"| E["Vai para a Direita (Seguro)"]
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:white
 ```
 
